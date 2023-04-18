@@ -1,0 +1,375 @@
+/******f*************
+    Project 1 Stylesheet
+    Name:Azime Ulker
+    Date: 2022-04-14
+    Description: This CSS files includes project 4 styles.
+********************/
+/*home page styles*/
+
+html,body,section, p, header,nav,footer,div,article,aside,ol,ul,li,h1,h2,h3,h4.article{
+	margin: 20px;
+	padding: 0;
+	box-sizing:border-box;
+	
+}
+
+body{
+	background-color: #120e0c;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:rgb(240, 240, 236);
+}
+
+h1 {
+	margin-top: 90px;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #ffa600;
+    text-align: center;
+}
+
+h2{
+	font-family:'Courier New', Courier, monospace;
+	font-style: italic;
+	font-size: 20px;
+	color:rgb(221, 188, 132);
+	padding: 20px;
+}
+
+h3{
+	font-family:'Courier New', Courier, monospace;
+	margin-top: 0px;
+	color:rgb(228, 92, 47);
+}
+
+p{
+	font-family:'Courier New', Courier, monospace;
+	margin-top: 50px;
+	text-align: center;
+
+}
+
+.updates{
+	padding: 10px;
+	margin-top: 70px;
+	text-align: center;
+	border-style: dotted;
+	border-radius: 20px;
+	
+}
+	.updates p{
+		font-family:'Courier New', Courier, monospace;
+		margin-top: -10px;
+
+	}
+
+
+.banner img{
+    width: 1400px;
+    height: 320px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*top nav*/
+.top_nav{
+	list-style:none;
+	display:flex;
+	justify-content: center;
+	padding: 0;
+}
+
+	.top_nav li{
+		display:inline;
+		text-align: center;
+		margin: 10px 80px;
+		box-shadow: 3px 3px 5px rgba(235, 181, 101, 0.3);
+	}
+
+	.top_nav li a{
+		padding: 5px 5px;
+		color: #c0c6e3;
+		text-decoration: none;
+	}
+
+	.top_nav li a:hover {
+		background-color:  #da8002;
+		color: #fff;
+ 	}
+
+/*footer*/
+.footer{
+	text-align:center;
+	font-size: large;
+}
+	.footer span{
+		font-size: 11px;
+		display:inline;
+	}
+
+/*when the browser is <= 680px, the navigation becomes vertical*/
+
+@media(max-width:680px){
+
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+
+	nav ul li {
+		width: 100%;
+		border: 1px black solid;
+	}	
+}
+
+/*products-services styles */
+
+button {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #092746;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #0062cc;
+  }
+
+.software {
+	background-color: #1e647d;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s
+	
+}
+	.software:hover{
+		opacity: 1
+	}
+
+	.software h1{
+		font-family:'Lucida Sans', 'Lucida Sans Regular';
+		color: rgb(255, 209, 43);
+		text-decoration: none;
+		margin-top: 15px;
+	}
+  
+
+.webDev {
+	background-color: #9c4f22;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+  }
+	  
+
+	.webDev:hover{
+		opacity: 1
+	}
+
+	.webDev h1{
+		font-family:'Lucida Sans', 'Lucida Sans Regular';
+		color: rgb(255, 209, 43);
+		text-decoration: none;
+		margin-top: 15px;
+	}
+
+
+.gameDev {
+	background-color: #2b6715;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+
+}
+	
+	.gameDev:hover{
+		opacity: 1
+	}
+
+	.gameDev h1{
+		font-family:'Lucida Sans', 'Lucida Sans Regular';
+		color: rgb(255, 209, 43);
+		text-decoration: none;
+		margin-top: 15px;
+	}
+
+.cyberSecurity{
+	background-color: #540665;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+	.cyberSecurity:hover{
+		opacity: 1
+	}
+
+	.cyberSecurity h1{
+		font-family:'Lucida Sans', 'Lucida Sans Regular';
+		color: rgb(255, 209, 43);
+		text-decoration: none;
+		margin-top: 15px;
+	}
+
+	.cyberSecurity h2{
+		font-family:'Lucida Sans', 'Lucida Sans Regular';
+		font-size: 20px;
+		color: #ff9e4a;
+		margin: auto;
+	}
+
+
+/*contact page styles*/
+
+/* Apply box-sizing to all elements */
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Apply default styles to the body */
+  body {
+	font-family: Arial, sans-serif;
+	background-color: black;
+	color: #fff;
+
+  }
+  
+  /* Apply styles to the form */
+  form {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #222;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Apply styles to form headings */
+
+  header {
+	margin-bottom: 50px;
+  }
+  
+  header h1 {
+	margin-top: 0px;
+	color: #ffa600;
+	list-style: none;
+
+  }
+  
+  /* Apply styles to form labels */
+  form label {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+
+  }
+  
+  /* Apply styles to form inputs */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: border-color 0.2s ease-in-out;
+	background-color: #fff;
+	color: #000;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="tel"]:focus,
+  form textarea:focus {
+	outline: none;
+	border-color: #2ecc71;
+  }
+  
+  /* Apply styles to error messages */
+  form .error {
+	color: #ff830f;
+	font-size: 14px;
+	margin-top: 5px;
+  }
+  
+  /* Apply styles to form buttons */
+  form button[type="submit"],
+  form button[type="reset"] {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  form button[type="submit"] {
+	background-color: #095b1b;
+	color: #fff;
+	margin-left: 180px;
+  }
+  
+  form button[type="reset"] {
+	background-color: #b4100a;
+	color: #fff;
+  }
+  
+  form button[type="submit"]:hover,
+  form button[type="reset"]:hover {
+	background-color: #27ae60;
+  }
+   form ul li{
+	list-style: none;
+   }
+  /* Additional styles for information box */
+  .information-box {
+	max-width: 400px;
+	margin: 0 auto 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+  }
+  
+  .information-box h3 {
+	margin-top: 0;
+	color: black;
+  }
+
+
+  
+  
